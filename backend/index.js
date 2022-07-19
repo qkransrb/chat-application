@@ -21,6 +21,7 @@ app.use(express.static(path.resolve(__dirname, "uploads")));
 // Routes
 app.use("/", require("./routes/auth"));
 app.use("/users", require("./routes/user"));
+app.use("/chats", require("./routes/chat"));
 
 // Server Port
 const port = process.env.PORT || 5000;
